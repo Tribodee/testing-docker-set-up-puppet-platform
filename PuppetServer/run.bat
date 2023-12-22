@@ -1,0 +1,1 @@
+docker run --net 179.18.0.4 --name puppetserver --hostname puppet puppet/puppetserver

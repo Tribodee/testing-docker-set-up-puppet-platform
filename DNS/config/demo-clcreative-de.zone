@@ -1,0 +1,20 @@
+$TTL 2d
+
+$ORIGIN demo-clcreative-de.
+
+@               IN      SOA     ns.demo-clcreative-de. info.clcreative-de. (
+                                2020220200      ;   serial
+                                12h             ;   refresh
+                                15m             ;   retry
+                                3w              ;   expire
+                                2h  )           ;   minimum TTL
+;
+;   name servers - NS recirds
+        IN      NS      ns1.demo-clcreative-de.
+
+;   name servers - A records
+ns1.demo-clcreative-de.                 IN          A           172.19.0.2
+puppetserver.demo-clcreative-de.        IN          A           172.19.0.4
+puppetdb.demo-clcreative-de.            IN          A           172.19.0.6
+puppetpostgresql.demo-clcreative-de.    IN          A           172.19.0.8
+puppetboard.demo-clcreative-de.         IN          A           172.19.0.10
